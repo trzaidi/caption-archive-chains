@@ -70,4 +70,6 @@ npm run typecheck
 npm run build
 ```
 
+`npm run smoke -- <image>` runs a five-step chain (vision description, two text steps, a no-model step and an image step) against the real AI Gateway with an in-memory database stand-in. It passed on November 6, 2026 with a campus photo.
+
 `sql/week8-security-tests.sql` rolls back every change. It passed against the shared database on November 6, 2026. It checks that anonymous visitors cannot read chains or runs, that a member cannot read, create, edit, delete, reorder or upload, and that a superadmin can create chains, append steps in order, edit, reorder with rewritten references, reject partial or foreign reorders, close gaps after a delete, record runs, audit changes and cascade a chain delete.
