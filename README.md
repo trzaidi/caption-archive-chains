@@ -60,7 +60,7 @@ NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=...
 GEMINI_API_KEY=...            # optional, server-only
 ```
 
-Only the publishable key is used; there is no service-role key. Google OAuth starts and ends on `https://caption-archive-chains.vercel.app`, which is in the Supabase Auth redirect allow-list. Vercel deployment protection is off; the app's own login and superadmin checks stay on.
+Only the publishable key is used; there is no service-role key. The GitHub repository is connected to the Vercel project, so every push to `main` deploys to production. Google OAuth starts and ends on `https://caption-archive-chains.vercel.app`, which is in the Supabase Auth redirect allow-list. Vercel deployment protection is off; the app's own login and superadmin checks stay on.
 
 ## Validation
 
